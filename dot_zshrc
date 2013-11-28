@@ -51,6 +51,9 @@ if [ "$TERM" "==" "xterm" ]; then
     export TERM=xterm-256color
 fi
 
+# make sure /usr/local/bin comes first
+export PATH=/usr/local/bin:$PATH
+
 #------------------------------------------------------------------------------
 #  BRANDSCREEN DEV SETTINGS
 #------------------------------------------------------------------------------
