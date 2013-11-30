@@ -54,6 +54,10 @@ fi
 # make sure /usr/local/bin comes first
 export PATH=/usr/local/bin:$PATH
 
+# Map ctrl-left and ctrl-right to go back and forward one word
+bindkey "^[OD" backward-word
+bindkey "^[OC" forward-word
+
 #------------------------------------------------------------------------------
 #  BRANDSCREEN DEV SETTINGS
 #------------------------------------------------------------------------------
