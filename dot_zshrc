@@ -64,7 +64,8 @@ bindkey "^[OD" backward-word
 bindkey "^[OC" forward-word
 
 # Alias for ctags
-alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
+# alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
+alias ctags="ctags -R --totals=yes --tag-relative=yes -f"
 
 #------------------------------------------------------------------------------
 #  BRANDSCREEN DEV SETTINGS
