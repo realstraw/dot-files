@@ -1,0 +1,5 @@
+# ignore my virtualenv files
+--ignore-dir=.ENV
+
+# ignore ctags file
+--ignore-file=is:.tags
