@@ -12,4 +12,7 @@ echo "Linking ~/.ackrc..."
 rm ~/.ackrc
 ln dot_ackrc ~/.ackrc
 
+echo "Linking ~/.vrapperrc..."
+ln dot_vrapperrc ~/.vrapperrc
+
 echo "Done!"
