@@ -67,6 +67,9 @@ bindkey "^[OC" forward-word
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
 alias ctags="ctags -R --totals=yes --tag-relative=yes -f"
 
+# Use vim for command-line editing
+set -o vi
+
 #------------------------------------------------------------------------------
 #  BRANDSCREEN DEV SETTINGS
 #------------------------------------------------------------------------------
