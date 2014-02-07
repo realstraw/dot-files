@@ -70,6 +70,10 @@ alias ctags="ctags -R --totals=yes --tag-relative=yes -f"
 # Use vim for command-line editing
 set -o vi
 
+# bind ^R to search history backward
+# bindkey -M vicmd '?' history-incremental-search-backward
+bindkey '^R' history-incremental-search-backward
+
 #------------------------------------------------------------------------------
 #  BRANDSCREEN DEV SETTINGS
 #------------------------------------------------------------------------------
