@@ -78,3 +78,5 @@ bindkey '^R' history-incremental-search-backward
 #  BRANDSCREEN DEV SETTINGS
 #------------------------------------------------------------------------------
 export SENTRY_IGNORE=1
+
+source ~/.profile
