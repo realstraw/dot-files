@@ -13,9 +13,11 @@ rm ~/.ackrc
 ln dot_ackrc ~/.ackrc
 
 echo "Linking ~/.vrapperrc..."
+rm ~/.vrapperrc
 ln dot_vrapperrc ~/.vrapperrc
 
 echo "Linking ~/.sbtconfig..."
+rm ~/.sbtconfig
 ln dot_sbtconfig ~/.sbtconfig
 
 echo "Done!"
