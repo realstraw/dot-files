@@ -74,8 +74,6 @@ set -o vi
 # bindkey -M vicmd '?' history-incremental-search-backward
 bindkey '^R' history-incremental-search-backward
 
-#------------------------------------------------------------------------------
-#  BRANDSCREEN DEV SETTINGS
-#------------------------------------------------------------------------------
-export SENTRY_IGNORE=1
 export PATH=$PATH:/usr/local/mysql/bin
+
+source ~/.profile
