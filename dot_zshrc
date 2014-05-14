@@ -77,3 +77,7 @@ bindkey '^R' history-incremental-search-backward
 export PATH=$PATH:/usr/local/mysql/bin
 
 source ~/.profile
+
+# For rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
