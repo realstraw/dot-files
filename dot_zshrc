@@ -59,16 +59,18 @@ alias tls="tmux ls"
 alias tn="tmux new -s"
 alias ta="tmux attach -t"
 
-# Map ctrl-left and ctrl-right to go back and forward one word (For Max OS X)
-bindkey "^[OD" backward-word
-bindkey "^[OC" forward-word
-
 # Alias for ctags
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
 alias ctags="ctags -R --totals=yes --tag-relative=yes -f"
 
 # Use vim for command-line editing
 set -o vi
+
+# Map ctrl-left and ctrl-right to go back and forward one word (For Max OS X)
+# bindkey "^[OD" backward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+
 
 # bind ^R to search history backward
 # bindkey -M vicmd '?' history-incremental-search-backward
