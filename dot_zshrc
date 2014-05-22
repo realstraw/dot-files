@@ -69,8 +69,9 @@ set -o vi
 # Map ctrl-left and ctrl-right to go back and forward one word (For Max OS X)
 # bindkey "^[OD" backward-word
 bindkey "^[[1;5D" backward-word
+bindkey "^[[1;9D" backward-word
 bindkey "^[[1;5C" forward-word
-
+bindkey "^[[1;9C" forward-word
 
 # bind ^R to search history backward
 # bindkey -M vicmd '?' history-incremental-search-backward
