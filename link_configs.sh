@@ -20,4 +20,12 @@ echo "Linking ~/.sbtconfig..."
 rm ~/.sbtconfig
 ln dot_sbtconfig ~/.sbtconfig
 
+echo "Linking ~/.inputrc..."
+rm ~/.inputrc
+ln dot_inputrc ~/.inputrc
+
+echo "Linking ~/.editrc..."
+rm ~/.editrc
+ln dot_editrc ~/.editrc
+
 echo "Done!"
