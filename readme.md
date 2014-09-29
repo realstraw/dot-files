@@ -19,3 +19,13 @@ Tmux requires reattach-to-user-namespace to use shared system clipboard. To
 install reattach-to-user-namespace on mac use:
 
     brew install reattach-to-user-namespace
+
+Configuration
+-------------
+
+### Mac:
+
+    # oh-my-zsh
+    git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    # ack
+    brew install ack
