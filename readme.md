@@ -29,3 +29,5 @@ Configuration
     git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     # ack
     brew install ack
+    # rbenv
+    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
