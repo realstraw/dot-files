@@ -29,4 +29,9 @@ echo "Linking ~/.editrc..."
 rm ~/.editrc
 ln dot_editrc ~/.editrc
 
+# For ctags configs
+echo "Linking ~/.ctags"
+rm ~/.ctags
+ln dot_ctags ~/.ctags
+
 echo "Done!"
