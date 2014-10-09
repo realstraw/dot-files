@@ -1,6 +1,11 @@
 # ignore my virtualenv files
 --ignore-dir=.ENV
+
+# ignore scala target files
 --ignore-dir=target
+
+# ignore python build files
+--ignore-dir=build
 
 # ignore ctags file
 --ignore-file=is:.tags
