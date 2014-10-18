@@ -61,7 +61,7 @@ alias ta="tmux attach -t"
 
 # Alias for ctags
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
-alias ctags-gen="ctags -R --totals=yes --tag-relative=yes -f"
+alias ctags-gen="ctags -R --totals=yes --tag-relative=yes --exclude=.ENV --exclude=build -f"
 
 # Use vim for command-line editing
 set -o vi
@@ -90,3 +90,6 @@ eval "$(rbenv init -)"
 
 # For java
 export JAVA_HOME="`/usr/libexec/java_home`"
+
+# For BeanShell
+alias bsh="java -cp ~/.bsh/bsh-2.0b4.jar bsh.Interpreter"

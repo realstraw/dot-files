@@ -20,6 +20,11 @@ install reattach-to-user-namespace on mac use:
 
     brew install reattach-to-user-namespace
 
+Download and install other programs
+
+    cd dotfiles
+    ./get_external_files.sh
+
 Configuration
 -------------
 
