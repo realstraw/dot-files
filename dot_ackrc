@@ -9,3 +9,6 @@
 
 # ignore ctags file
 --ignore-file=is:.tags
+
+# ignore idea files
+--ignore-dir=.idea
