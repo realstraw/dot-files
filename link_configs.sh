@@ -7,6 +7,9 @@ ln dot_zshrc ~/.zshrc
 echo "Linking ~/.tmux.conf..."
 rm ~/.tmux.conf
 ln dot_tmux.conf ~/.tmux.conf
+rm ~/.tmux/dev
+mkdir -p ~/.tmux
+ln dot_tmux_dev ~/.tmux/dev
 
 echo "Linking ~/.ackrc..."
 rm ~/.ackrc
