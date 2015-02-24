@@ -12,3 +12,6 @@
 
 # ignore idea files
 --ignore-dir=.idea
+
+# ignore eclipse IDE stuff
+--ignore-dir=.cache
