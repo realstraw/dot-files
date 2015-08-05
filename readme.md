@@ -15,10 +15,11 @@ To link the rc files:
 Dependencies
 ------------
 
-Tmux requires reattach-to-user-namespace to use shared system clipboard. To
-install reattach-to-user-namespace on mac use:
+~~Tmux requires reattach-to-user-namespace to use shared system clipboard. To
+install reattach-to-user-namespace on mac use:~~ (Edit:
+reattach-to-user-namespace does not seem to work any more)
 
-    brew install reattach-to-user-namespace
+    # brew install reattach-to-user-namespace
 
 Download and install other programs
 
