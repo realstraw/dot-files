@@ -82,14 +82,15 @@ bindkey '^R' history-incremental-search-backward
 
 export PATH=$PATH:/usr/local/mysql/bin
 
-source ~/.profile
-
 # For rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# For java
-# export JAVA_HOME="`/usr/libexec/java_home -v 1.7`"
-
 # For BeanShell
 alias bsh="java -cp ~/.bsh/bsh-2.0b4.jar bsh.Interpreter"
+
+# This loads nvm
+export NVM_DIR="~/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+source ~/.profile
