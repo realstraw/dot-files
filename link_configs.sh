@@ -4,6 +4,10 @@ echo "Linking ~/.zshrc..."
 rm ~/.zshrc
 ln dot_zshrc ~/.zshrc
 
+echo "Linking zsh theme..."
+rm ~/.realstraw.zsh-theme
+ln dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
+
 echo "Linking ~/.tmux.conf..."
 rm ~/.tmux.conf
 ln dot_tmux.conf ~/.tmux.conf
