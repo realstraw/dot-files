@@ -99,6 +99,5 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.profile
 
-date
-figlet "sup $USER"
-echo "                      -- `hostname`"
+alias greetings="date && figlet \"sup $USER\" && echo \"                      -- `hostname`\""
+greetings
