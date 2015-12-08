@@ -26,6 +26,11 @@ Download and install other programs
     cd dotfiles
     ./get_external_files.sh
 
+Depended programs:
+
+- figlet
+- rbenv
+
 Configuration
 -------------
 
