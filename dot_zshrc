@@ -58,6 +58,9 @@ fi
 # make sure /usr/local/bin comes first
 export PATH=~/bin:/usr/local/bin:$PATH
 
+# make vim the default system editor
+export EDITOR=vim
+
 # Tmux shortcuts
 alias tls="tmux ls"
 alias tn="tmux new -s"
