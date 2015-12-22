@@ -1,45 +1,62 @@
-#! /bin/sh
+#!/usr/bin/env bash
+
+project_root="$(cd "`dirname "$0"`"; pwd)"
+echo $project_root
 
 echo "Linking ~/.zshrc..."
 rm ~/.zshrc
-ln dot_zshrc ~/.zshrc
+ln $project_root/dot_zshrc ~/.zshrc
 
 echo "Linking zsh theme..."
 rm ~/.realstraw.zsh-theme
-ln dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
+ln $project_root/dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
 
 echo "Linking ~/.tmux.conf..."
 rm ~/.tmux.conf
-ln dot_tmux.conf ~/.tmux.conf
+ln $project_root/dot_tmux.conf ~/.tmux.conf
 echo "Linking ~/.tmux/dev..."
 rm ~/.tmux/dev
 mkdir -p ~/.tmux
-ln dot_tmux_dev ~/.tmux/dev
+ln $project_root/dot_tmux_dev ~/.tmux/dev
 
 echo "Linking ~/.ackrc..."
 rm ~/.ackrc
-ln dot_ackrc ~/.ackrc
+ln $project_root/dot_ackrc ~/.ackrc
 
 echo "Linking ~/.vrapperrc..."
 rm ~/.vrapperrc
-ln dot_vrapperrc ~/.vrapperrc
+ln $project_root/dot_vrapperrc ~/.vrapperrc
 
 echo "Linking ~/.sbtconfig..."
 rm ~/.sbtconfig
-ln dot_sbtconfig ~/.sbtconfig
+ln $project_root/dot_sbtconfig ~/.sbtconfig
 
 echo "Linking ~/.inputrc..."
 rm ~/.inputrc
-ln dot_inputrc ~/.inputrc
+ln $project_root/dot_inputrc ~/.inputrc
 
 # This is for mac which does not use inputrc
 echo "Linking ~/.editrc..."
 rm ~/.editrc
-ln dot_editrc ~/.editrc
+ln $project_root/dot_editrc ~/.editrc
 
 # For ctags configs
 echo "Linking ~/.ctags"
 rm ~/.ctags
-ln dot_ctags ~/.ctags
+ln $project_root/dot_ctags ~/.ctags
+
+# Link bin files
+echo "Create the directory if it does not exist..."
+[ ! -d ~/bin ] && mkdir ~/bin
+echo "Done!"
+
+echo "Linking all files in bin..."
+for f in $project_root/bin/*; do
+    file_name=$(basename $f)
+    file_path=~/bin/$file_name
+    echo "  $file_name"
+    [ -f $file_path ] && rm $file_path
+    ln $f $file_path
+done
 
 echo "Done!"
