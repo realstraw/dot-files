@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+usage="USAGE: $0 <local_dir> <remote_dir>"
+
+if [ $# -ne 2 ]; then
+    echo $usage
+    exit 1
+fi
+
+local_dir=$1; shift
+remote_dir=$1; shift
+
+# Rsync with my default settings that syncs source file to a remote directory,
+# ignoring binary/compiled or testing files
+rsync -avz \
+    --exclude=.worksheet \
+    --exclude=.git \
+    --exclude=target \
+    --exclude=\*.swp \
+    --exclude=.idea \
+    --delete \
+    $local_dir $remote_dir
