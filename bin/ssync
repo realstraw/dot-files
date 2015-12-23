@@ -13,10 +13,14 @@ remote_dir=$1; shift
 # Rsync with my default settings that syncs source file to a remote directory,
 # ignoring binary/compiled or testing files
 rsync -avz \
-    --exclude=.worksheet \
-    --exclude=.git \
-    --exclude=target \
-    --exclude=\*.swp \
-    --exclude=.idea \
     --delete \
+    --exclude=.worksheet \  # stuff i put in for testing/scripting
+    --exclude=.git \  # git
+    --exclude=target \  # scala/java compiled files
+    --exclude=\*.swp \  # vim files
+    --exclude=.idea \  # InteliJ files
+    --exclude=dist \  # python setup files
+    --exclude=\*.egg-info  # python setup files
+    --exclude=build  # python setup files
+    --exclude=.ENV  # python virtual env files
     $local_dir $remote_dir
