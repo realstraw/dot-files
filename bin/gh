@@ -2,6 +2,7 @@
 
 # Opens the github page for the current git repository in your browser
 # inspired by git@github.com:jasonneylon/dotfiles.git
+# Note: should use https://github.com/github/hub instead
 giturl=$(git config --get remote.origin.url)
 
 if [ "$giturl" == "" ]; then
