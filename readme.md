@@ -2,7 +2,7 @@ My Config Files
 ===============
 
 **Note**: these dot files does not include vimrc or gvimrc, vim configs are in a
-separate repo.
+separate repo here: https://github.com/realstraw/dotvim
 
 Install
 -------
