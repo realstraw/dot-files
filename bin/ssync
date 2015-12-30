@@ -23,4 +23,5 @@ rsync -avz \
     --exclude=\*.egg-info \
     --exclude=build \
     --exclude=.ENV \
+    --exclude=*.pyc \
     $local_dir $remote_dir
