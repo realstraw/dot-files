@@ -109,3 +109,17 @@ source ~/.profile
 
 alias greetings="date && figlet \"sup $USER\" && echo \"                      -- `hostname`\""
 greetings
+
+function chjava {
+    usage="Usage: chjava 6|7|8"
+    if [[ $# -ne 1 ]]; then
+        echo $usage
+        return
+    fi
+    java_version=$1; shift
+    if [[ "6 7 8" =~ $java_version ]]; then
+        export JAVA_HOME=`/usr/libexec/java_home -v 1.$java_version`
+    else
+        echo $usage
+    fi
+}
