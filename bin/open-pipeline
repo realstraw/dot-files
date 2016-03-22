@@ -11,4 +11,4 @@ fi
 
 pipeline_id=$1; shift
 
-open "https://console.aws.amazon.com/datapipeline/home?region=us-east-1#ExecutionDetailsPlace:pipelineId=${pipeline_id}&show=latest"
+open "https://console.aws.amazon.com/datapipeline/home?region=${AWS_DEFAULT_REGION}#ExecutionDetailsPlace:pipelineId=${pipeline_id}&show=latest"
