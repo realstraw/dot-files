@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## currently for mac only
+
+usage="USAGE: $0 <pipeline-id>"
+
+if [ $# -ne 1 ]; then
+    echo $usage
+    exit 1
+fi
+
+pipeline_id=$1; shift
+
+open "https://console.aws.amazon.com/datapipeline/home?region=us-east-1#ExecutionDetailsPlace:pipelineId=${pipeline_id}&show=latest"
