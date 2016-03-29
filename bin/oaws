@@ -12,9 +12,9 @@ fi
 
 aws_id=$1; shift
 
-if [[ $aws_id == df* ]]; then
+if [[ $aws_id == df-* ]]; then
     obj_detail_url="https://console.aws.amazon.com/datapipeline/home?region=${AWS_DEFAULT_REGION}#ExecutionDetailsPlace:pipelineId=${aws_id}&show=latest"
-elif [[ $aws_id == j* ]]; then
+elif [[ $aws_id == j-* ]]; then
     obj_detail_url="https://console.aws.amazon.com/elasticmapreduce/home?region${AWS_DEFAULT_REGION}#cluster-details:${aws_id}"
 else
     echo "Invalid or unsupported aws object id ($aws_id)"
