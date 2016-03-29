@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+## Open an aws object details by given id
+## currently for mac only
+
+usage="USAGE: $0 <aws-obj-id>"
+
+if [ $# -ne 1 ]; then
+    echo $usage
+    exit 1
+fi
+
+aws_id=$1; shift
+
+if [[ $aws_id == df* ]]; then
+    obj_detail_url="https://console.aws.amazon.com/datapipeline/home?region=${AWS_DEFAULT_REGION}#ExecutionDetailsPlace:pipelineId=${aws_id}&show=latest"
+elif [[ $aws_id == j* ]]; then
+    obj_detail_url="https://console.aws.amazon.com/elasticmapreduce/home?region${AWS_DEFAULT_REGION}#cluster-details:${aws_id}"
+else
+    echo "Invalid or unsupported aws object id ($aws_id)"
+    echo $usage
+    exit 1
+fi
+
+echo "Opening $obj_detail_url in your browser..."
+open $obj_detail_url
+echo "Done"
