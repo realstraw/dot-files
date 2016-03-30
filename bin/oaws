@@ -16,6 +16,8 @@ if [[ $aws_id == df-* ]]; then
     obj_detail_url="https://console.aws.amazon.com/datapipeline/home?region=${AWS_DEFAULT_REGION}#ExecutionDetailsPlace:pipelineId=${aws_id}&show=latest"
 elif [[ $aws_id == j-* ]]; then
     obj_detail_url="https://console.aws.amazon.com/elasticmapreduce/home?region${AWS_DEFAULT_REGION}#cluster-details:${aws_id}"
+elif [[ $aws_id == i-* ]]; then
+    obj_detail_url="https://console.aws.amazon.com/ec2/v2/home?region=${AWS_DEFAULT_REGION}#Instances:search=${aws_id};sort=desc:instanceState"
 else
     echo "Invalid or unsupported aws object id ($aws_id)"
     echo $usage
