@@ -108,7 +108,11 @@ export NVM_DIR="$HOME/.nvm"
 source ~/.profile
 
 alias greetings="date && figlet \"sup $USER\" && echo \"                      -- `hostname`\""
-greetings
+
+# Do not display greetings in DTerm.app
+if [[ $TERM == xterm-* ]]; then
+    greetings
+fi
 
 function chjava {
     usage="Usage: chjava 6|7|8"
