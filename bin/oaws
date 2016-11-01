@@ -2,11 +2,10 @@
 
 ## Open an aws object details by given id
 ## currently for mac only
-
-usage="USAGE: $0 <aws-obj-id>"
+## REQUIRES: aws CLI tool
 
 if [ $# -ne 1 ]; then
-    echo $usage
+    echo usage="USAGE: $0 <aws-obj-id>"
     exit 1
 fi
 
@@ -19,9 +18,19 @@ elif [[ $aws_id == j-* ]]; then
 elif [[ $aws_id == i-* ]]; then
     obj_detail_url="https://console.aws.amazon.com/ec2/v2/home?region=${AWS_DEFAULT_REGION}#Instances:search=${aws_id};sort=desc:instanceState"
 else
-    echo "Invalid or unsupported aws object id ($aws_id)"
-    echo $usage
-    exit 1
+    IFS=$'\n'
+    matches=( $(aws datapipeline list-pipelines | grep -i -B 1 $aws_id) )
+
+    if [[ ${#matches[@]} == 2 ]]; then
+        echo "Found one match:"
+        aws_id=`echo ${matches[0]} | grep -o 'df-[[:alnum:]]*'`
+        obj_detail_url="https://console.aws.amazon.com/datapipeline/home?region=${AWS_DEFAULT_REGION}#ExecutionDetailsPlace:pipelineId=${aws_id}&show=latest"
+    else
+        echo "Multiple matches returned:"
+        echo ${matches[@]}
+        echo "Done"
+        exit 1
+    fi
 fi
 
 echo "Opening $obj_detail_url in your browser..."
