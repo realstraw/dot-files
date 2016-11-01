@@ -4,10 +4,8 @@
 ## currently for mac only
 ## REQUIRES: aws CLI tool
 
-usage="USAGE: $0 <aws-obj-id>"
-
 if [ $# -ne 1 ]; then
-    echo $usage
+    echo usage="USAGE: $0 <aws-obj-id>"
     exit 1
 fi
 
@@ -20,19 +18,17 @@ elif [[ $aws_id == j-* ]]; then
 elif [[ $aws_id == i-* ]]; then
     obj_detail_url="https://console.aws.amazon.com/ec2/v2/home?region=${AWS_DEFAULT_REGION}#Instances:search=${aws_id};sort=desc:instanceState"
 else
-    temp_file=$(mktemp foobar_XXXX)
-    aws datapipeline list-pipelines | grep -i -B 1 $pipeline_name > $temp_file
-    pipeline_matches=`wc -l < $temp_file | tr -d ' '`
+    IFS=$'\n'
+    matches=( $(aws datapipeline list-pipelines | grep -i -B 1 $aws_id) )
 
-    if [[ $pipeline_matches == 2 ]]; then
+    if [[ ${#matches[@]} == 2 ]]; then
         echo "Found one match:"
-        aws_id=`head -n 1 $temp_file | grep -o 'df-[[:alnum:]]*'`
+        aws_id=`echo ${matches[0]} | grep -o 'df-[[:alnum:]]*'`
         obj_detail_url="https://console.aws.amazon.com/datapipeline/home?region=${AWS_DEFAULT_REGION}#ExecutionDetailsPlace:pipelineId=${aws_id}&show=latest"
-        rm ${temp_file}
     else
         echo "Multiple matches returned:"
-        awk '/"id":/ {id=substr($2,2,length($2)-3)} /"name":/{print id," => ",substr($2,2,length($2)-2);}' $temp_file
-        rm ${temp_file}
+        echo ${matches[@]}
+        echo "Done"
         exit 1
     fi
 fi
