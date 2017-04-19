@@ -128,3 +128,7 @@ function chjava {
         echo $usage
     fi
 }
+
+# python stuff
+alias vactivate="source .ENV/bin/activate"
+alias mypython="PYTHONPATH='.' python"
