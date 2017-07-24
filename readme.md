@@ -42,3 +42,9 @@ Configuration
     brew install ack
     # rbenv
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+
+Other
+-----
+
+FoxyProxy settings are located in `other` folder, need to manually import the
+settings.
