@@ -135,3 +135,6 @@ function chjava {
 # python stuff
 alias vactivate="source .ENV/bin/activate"
 alias mypython="PYTHONPATH='.' python"
+
+# sbt and scala stuff
+SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
