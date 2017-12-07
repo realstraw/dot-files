@@ -109,8 +109,6 @@ alias avro-tools="java -jar $HOME/bin/avro-tools/avro-tools-1.8.2.jar"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-source ~/.profile
-
 alias greetings="date && figlet \"sup $USER\" && echo \"                      -- `hostname`\""
 
 # Do not display greetings in DTerm.app
@@ -138,3 +136,6 @@ alias mypython="PYTHONPATH='.' python"
 
 # sbt and scala stuff
 SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+
+# source profile for confidential settings
+source ~/.profile
