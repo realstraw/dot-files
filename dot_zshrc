@@ -87,7 +87,7 @@ bindkey '^R' history-incremental-search-backward
 
 # OS X El Capitan user python libraries
 if [[ "$OSTYPE" = darwin* ]]; then
-    export PATH=~/Library/Python/2.7/bin:$PATH
+    export PATH=~/Library/Python/3.6/bin:~/Library/Python/2.7/bin:$PATH
 fi
 # make sure /usr/local/bin comes first
 export PATH=~/bin:/usr/local/bin:$PATH
