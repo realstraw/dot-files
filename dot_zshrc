@@ -102,12 +102,6 @@ eval "$(rbenv init -)"
 # For BeanShell
 alias bsh="java -cp $HOME/.bsh/bsh-2.0b4.jar bsh.Interpreter"
 
-# For avro-tools
-alias avro-tools="java -jar $HOME/bin/avro-tools/avro-tools-1.8.2.jar"
-
-# For parquet-tools
-alias parquet-tools="java -jar $HOME/bin/parquet-tools/parquet-tools-1.9.0.jar"
-
 # This loads nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
