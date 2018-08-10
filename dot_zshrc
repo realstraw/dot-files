@@ -67,7 +67,7 @@ alias ta="EVENT_NOKQUEUE=1 tmux attach -t"
 
 # Alias for ctags
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
-alias ctags-gen="ctags -R --totals=yes --tag-relative=yes --exclude=.ENV --exclude=build --exclude=target -f"
+alias ctags-gen="ctags -R --totals=yes --tag-relative=yes --exclude=.ENV --exclude=.PY_ENV --exclude=build --exclude=target -f"
 
 # Use vim for command-line editing
 set -o vi
@@ -129,7 +129,7 @@ function chjava {
 }
 
 # python stuff
-alias vactivate="source .ENV/bin/activate"
+alias vactivate="source .PY_ENV/bin/activate"
 alias mypython="PYTHONPATH='.' python"
 
 # sbt and scala stuff
