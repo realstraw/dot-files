@@ -86,12 +86,13 @@ bindkey "^[[1;9C" forward-word
 # bindkey -M vicmd '?' history-incremental-search-backward
 bindkey '^R' history-incremental-search-backward
 
-# OS X El Capitan user python libraries
-if [[ "$OSTYPE" = darwin* ]]; then
-    export PATH=~/Library/Python/3.6/bin:~/Library/Python/2.7/bin:$PATH
-fi
 # make sure /usr/local/bin comes first
 export PATH=~/bin:/usr/local/bin:$PATH
+
+# OS X El Capitan user python libraries should come at the very first
+if [[ "$OSTYPE" = darwin* ]]; then
+    export PATH=~/Library/Python/3.7/bin:~/Library/Python/2.7/bin:$PATH
+fi
 
 # add more path
 export PATH=$PATH:/usr/local/mysql/bin
