@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+~/Codebase/self/midori/bin/run $@
