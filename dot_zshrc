@@ -63,6 +63,9 @@ export EDITOR=vim
 # use EVENT_NOKQUEUE=1 before starting tmux because kqueue is broken on OS X
 alias tls="EVENT_NOKQUEUE=1 tmux ls"
 alias tn="EVENT_NOKQUEUE=1 tmux new -s"
+function tnn() {
+    tn ${PWD##*/}
+}
 alias ta="EVENT_NOKQUEUE=1 tmux attach -t"
 
 # Alias for ctags
