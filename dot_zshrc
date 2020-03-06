@@ -67,6 +67,9 @@ function tnn() {
     tn ${PWD##*/}
 }
 alias ta="EVENT_NOKQUEUE=1 tmux attach -t"
+function taa() {
+    ta ${PWD##*/}
+}
 
 # Alias for ctags
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
