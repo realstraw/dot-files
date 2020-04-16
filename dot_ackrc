@@ -18,3 +18,6 @@
 
 # ignore metals
 --ignore-dir=.metals
+
+# ignore .bloop for metals
+--ignore-dir=.bloop
