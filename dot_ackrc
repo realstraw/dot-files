@@ -21,3 +21,6 @@
 
 # ignore .bloop for metals
 --ignore-dir=.bloop
+
+# ignore terraform files
+--ignore-dir=.terraform

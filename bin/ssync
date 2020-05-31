@@ -24,4 +24,6 @@ rsync -avz \
     --exclude=build \
     --exclude=.ENV \
     --exclude=*.pyc \
+    --exclude=.bloop \
+    --exclude=.metals \
     $local_dir $remote_dir
