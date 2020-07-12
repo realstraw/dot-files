@@ -97,7 +97,7 @@ export PATH=~/bin:/usr/local/bin:$PATH
 
 # OS X El Capitan user python libraries should come at the very first
 if [[ "$OSTYPE" = darwin* ]]; then
-    export PATH=~/Library/Python/3.7/bin:~/Library/Python/2.7/bin:$PATH
+    export PATH=~/Library/Python/3.8/bin:~/Library/Python/2.7/bin:$PATH
 fi
 
 # add more path
