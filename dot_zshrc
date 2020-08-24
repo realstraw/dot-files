@@ -64,11 +64,13 @@ export EDITOR=vim
 alias tls="EVENT_NOKQUEUE=1 tmux ls"
 alias tn="EVENT_NOKQUEUE=1 tmux new -s"
 function tnn() {
-    tn ${PWD##*/}
+    foldername=${PWD##*/}
+    tn "${foldername/\./-}"
 }
 alias ta="EVENT_NOKQUEUE=1 tmux attach -t"
 function taa() {
-    ta ${PWD##*/}
+    foldername=${PWD##*/}
+    ta "${foldername/\./-}"
 }
 
 # Alias for ctags
