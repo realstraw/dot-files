@@ -95,7 +95,7 @@ bindkey "^[[1;9C" forward-word
 bindkey '^R' history-incremental-search-backward
 
 # make sure /usr/local/bin comes first
-export PATH=~/bin:/usr/local/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # OS X El Capitan user python libraries should come at the very first
 if [[ "$OSTYPE" = darwin* ]]; then
