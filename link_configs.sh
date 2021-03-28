@@ -45,6 +45,11 @@ echo "Linking ~/.ctags"
 rm ~/.ctags
 ln $project_root/dot_ctags ~/.ctags
 
+# For gitignore
+echo "Linking ~/.gitignore"
+rm ~/.gitignore
+ln $project_root/dot_gitignore ~/.gitignore
+
 # Link bin files
 echo "Create the directory if it does not exist..."
 [ ! -d ~/bin ] && mkdir ~/bin
