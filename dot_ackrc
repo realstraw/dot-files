@@ -24,3 +24,15 @@
 
 # ignore terraform files
 --ignore-dir=.terraform
+
+# ignore node lib dir
+--ignore-dir=lib
+
+# ignore node module dir
+--ignore-dir=node_modules
+
+# ignore package lock
+--ignore-file=is:package-lock.json
+
+# ignore typescript build info
+--ignore-file=ext:tsbuildinfo
