@@ -105,10 +105,6 @@ fi
 # add more path
 export PATH=$PATH:/usr/local/mysql/bin
 
-# For rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # For BeanShell
 alias bsh="java -cp $HOME/.bsh/bsh-2.0b4.jar bsh.Interpreter"
 
@@ -157,3 +153,6 @@ export GPG_TTY=$(tty)
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+## For rbenv
+eval "$(rbenv init - zsh)"
