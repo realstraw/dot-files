@@ -65,7 +65,7 @@ alias tls="EVENT_NOKQUEUE=1 tmux ls"
 alias tn="EVENT_NOKQUEUE=1 tmux new -s"
 function tnn() {
     foldername=${PWD##*/}
-    tn "${foldername/\./-}"
+    tn "${foldername//\./-}"
 }
 alias ta="EVENT_NOKQUEUE=1 tmux attach -t"
 function taa() {
