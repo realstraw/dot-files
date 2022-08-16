@@ -4,3 +4,4 @@
 metals.sbt
 .tags
 .DS_Store
+.vscode
