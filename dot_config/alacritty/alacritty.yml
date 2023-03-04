@@ -1,0 +1,22 @@
+import:
+  - ~/.config/alacritty/nord-color.yml
+
+# Font configuration
+font:
+  normal:
+    family: Hack Nerd Font Mono
+  size: 12.0
+  offset:
+    y: 1
+
+env:
+  TERM: xterm-256color
+
+window:
+  decorations: buttonless
+  opacity: 0.95
+
+key_bindings:
+  # https://github.com/alacritty/alacritty/issues/1108 make sure control + 6
+  # works in vim
+  - { key: Key6, mods: Control, chars: "\x1e" }
