@@ -1,5 +1,8 @@
 import:
   - ~/.config/alacritty/nord-color.yml
+  # - ~/.config/alacritty/themes/themes/nord.yaml
+  # - ~/.config/alacritty/themes/themes/solarized_dark.yaml
+  # - ~/.config/alacritty/themes/themes/solarized_light.yaml
 
 # Font configuration
 font:

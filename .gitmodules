@@ -1,0 +1,3 @@
+[submodule "dot_config/alacritty/themes"]
+	path = dot_config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme
