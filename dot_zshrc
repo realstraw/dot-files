@@ -45,8 +45,14 @@
 ### plugins=(git)
 ### 
 ### source $ZSH/oh-my-zsh.sh
-### 
-### # Customize to your needs...
+
+# Customize to your needs...
+
+## omz shortcuts that I commonly use
+alias ls="ls -G"
+alias l="ls -lah"
+alias gc="git commit --verbose"
+##
 
 # # Load the theme
 # source ~/.realstraw.zsh-theme
