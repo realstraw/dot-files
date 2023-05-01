@@ -70,7 +70,7 @@ for f in $project_root/dot_config/*; do
     file_name=$(basename $f)
     file_path=~/.config/$file_name
     echo "  $file_name"
-    [ -d $file_path ] && rm -rf $file_path
+    [ -e $file_path ] && rm -rf $file_path
     ln -s $f $file_path
 done
 
