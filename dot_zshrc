@@ -147,7 +147,7 @@ alias vactivate="source .PY_ENV/bin/activate"
 alias mypython="PYTHONPATH='.' python"
 
 # sbt and scala stuff
-SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xmx2G"
 
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f'
