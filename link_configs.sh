@@ -50,6 +50,16 @@ echo "Linking ~/.gitignore"
 rm ~/.gitignore
 ln $project_root/dot_gitignore ~/.gitignore
 
+# For yabairc
+echo "Linking ~/.yabairc"
+rm ~/.yabbairc
+ln $project_root/dot_yabairc ~/.yabairc
+
+# For skhdrc
+echo "Linking ~/.skhdrc"
+rm ~/.skhdrc
+ln $project_root/dot_skhdrc ~/.skhdrc
+
 # Link bin files
 echo "Create the directory if it does not exist..."
 [ ! -d ~/bin ] && mkdir ~/bin
