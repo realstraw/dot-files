@@ -16,3 +16,6 @@ yabai -m config normal_window_border_color 0xFF4C566A
 # apps to not manage (ignore)
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Authy Desktop$" manage=off
+
+# play nicely with popup window
+yabai -m rule --add app="^Calendar$" title="(General|^$)" manage=off
