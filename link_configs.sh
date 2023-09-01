@@ -52,7 +52,7 @@ ln $project_root/dot_gitignore ~/.gitignore
 
 # For yabairc
 echo "Linking ~/.yabairc"
-rm ~/.yabbairc
+rm ~/.yabairc
 ln $project_root/dot_yabairc ~/.yabairc
 
 # For skhdrc
