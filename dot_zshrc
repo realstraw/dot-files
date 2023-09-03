@@ -110,8 +110,8 @@ fi
 
 export PATH=$PATH:~/Library/Application\ Support/Coursier/bin
 
-# add more path
-export PATH=$PATH:/usr/local/mysql/bin
+# go binaries
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # For BeanShell
 alias bsh="java -cp $HOME/.bsh/bsh-2.0b4.jar bsh.Interpreter"
