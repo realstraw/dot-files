@@ -13,6 +13,12 @@ yabai -m config window_border on
 yabai -m config active_window_border_color 0xFF88C0D0
 yabai -m config normal_window_border_color 0xFF4C566A
 
+
+# Focus windown when mouse moves
+yabai -m config focus_follows_mouse autofocus
+# Move the mouse when focus changes
+yabai -m config mouse_follows_focus on
+
 # apps to not manage (ignore)
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Authy Desktop$" manage=off
