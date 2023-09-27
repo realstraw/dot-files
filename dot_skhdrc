@@ -106,8 +106,10 @@ alt - f : yabai -m window --toggle zoom-fullscreen
 shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
 
 # float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
+alt - c : yabai -m window --toggle float;\
           yabai -m window --grid 8:8:1:1:6:6
+alt - t : yabai -m window --toggle float;\
+          yabai -m window --grid 10:18:1:1:12:8
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance
@@ -152,3 +154,5 @@ cmd + alt + shift - l : yabai -m window --resize left:20:0
 shift + alt - 0x1E : yabai -m config layout stack
 # shift + alt - [
 shift + alt - 0x21 : yabai -m config layout bsp
+# shift + alt - |
+shift + alt - 0x2A : yabai -m config layout float
