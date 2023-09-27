@@ -109,7 +109,7 @@ shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
 alt - c : yabai -m window --toggle float;\
           yabai -m window --grid 8:8:1:1:6:6
 alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 10:18:5:1:12:8
+          yabai -m window --grid 10:18:1:1:12:8
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance
