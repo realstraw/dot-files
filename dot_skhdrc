@@ -93,11 +93,15 @@ shift + alt - l : yabai -m window --swap east
 # stack the window
 shift + alt - m : yabai -m window --insert stack
 
-# move managed window
-shift + alt + ctrl - h : yabai -m window --warp west
-shift + alt + ctrl - j : yabai -m window --warp south
-shift + alt + ctrl - k : yabai -m window --warp north
-shift + alt + ctrl - l : yabai -m window --warp east
+# # move managed window
+# shift + alt + ctrl - h : yabai -m window --warp west
+# shift + alt + ctrl - j : yabai -m window --warp south
+# shift + alt + ctrl - k : yabai -m window --warp north
+# shift + alt + ctrl - l : yabai -m window --warp east
+shift + alt + ctrl - h : yabai -m window --stack west
+shift + alt + ctrl - j : yabai -m window --stack south
+shift + alt + ctrl - k : yabai -m window --stack north
+shift + alt + ctrl - l : yabai -m window --stack east
 
 # rotate tree
 alt - r: yabai -m space --rotate 90
