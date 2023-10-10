@@ -90,6 +90,9 @@ shift + alt - j : yabai -m window --swap south
 shift + alt - k : yabai -m window --swap north
 shift + alt - l : yabai -m window --swap east
 
+# stack the window
+shift + alt - m : yabai -m window --insert stack
+
 # move managed window
 shift + alt + ctrl - h : yabai -m window --warp west
 shift + alt + ctrl - j : yabai -m window --warp south
