@@ -14,7 +14,7 @@ yabai -m config active_window_border_color 0xFF88C0D0
 yabai -m config normal_window_border_color 0xFF4C566A
 yabai -m config window_border_blur off
 
-yabai -m config split_ratio 0.3
+yabai -m config split_ratio 0.38
 
 # Focus windown when mouse moves
 yabai -m config focus_follows_mouse off
@@ -22,9 +22,10 @@ yabai -m config focus_follows_mouse off
 yabai -m config mouse_follows_focus off
 
 # apps to not manage (ignore)
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Authy Desktop$" manage=off
-yabai -m rule --add app="^Authy$" manage=off
+yabai -m rule --add app=".*" manage=off
+# yabai -m rule --add app="^System Settings$" manage=off
+# yabai -m rule --add app="^Authy Desktop$" manage=off
+# yabai -m rule --add app="^Authy$" manage=off
 
 # play nicely with popup window
 yabai -m rule --add app="^Calendar$" title="(General|^$)" manage=off
