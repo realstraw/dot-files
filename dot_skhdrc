@@ -90,8 +90,8 @@ shift + alt - j : yabai -m window --swap south
 shift + alt - k : yabai -m window --swap north
 shift + alt - l : yabai -m window --swap east
 
-# stack the window
-shift + alt - i : yabai -m window --insert stack
+# # stack the window
+# shift + alt - i : yabai -m window --insert stack
 
 # move (warp) managed window
 shift + alt - left : yabai -m window --warp west
@@ -144,7 +144,7 @@ shift + alt - m : yabai -m window --grid 30:30:1:1:28:28
 
 shift + alt - y : yabai -m window --grid 30:30:0:0:20:22
 shift + alt - n : yabai -m window --grid 30:30:0:4:14:26
-shift + alt - o : yabai -m window --grid 30:30:11:0:19:26
+shift + alt - o : yabai -m window --grid 30:30:5:0:25:26
 shift + alt - 0x2F : yabai -m window --grid 30:30:4:4:26:26
 
 # toggle window split type
