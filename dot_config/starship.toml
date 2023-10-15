@@ -14,3 +14,6 @@ style = 'bold red'
 [[battery.display]]
 threshold = 30
 style = 'bold yellow'
+
+[time]
+disabled = false
