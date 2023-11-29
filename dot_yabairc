@@ -1,4 +1,6 @@
-yabai -m config layout         bsp
+# yabai -m config layout         bsp
+yabai -m config layout         float
+
 yabai -m config top_padding    10
 yabai -m config bottom_padding 10
 yabai -m config left_padding   10
@@ -6,7 +8,8 @@ yabai -m config right_padding  10
 yabai -m config window_gap     10
 
 # New window spawns to the right if vertical split, or bottom if horizontal split
-yabai -m config window_placement second_child
+# yabai -m config window_placement second_child
+yabai -m config window_placement first_child
 
 # Comment out the following as window boarder feature no longer supported in 6.0
 # # Draw border for windows and configure color
@@ -23,10 +26,10 @@ yabai -m config focus_follows_mouse off
 yabai -m config mouse_follows_focus off
 
 # apps to not manage (ignore)
-yabai -m rule --add app=".*" manage=off
-# yabai -m rule --add app="^System Settings$" manage=off
-# yabai -m rule --add app="^Authy Desktop$" manage=off
-# yabai -m rule --add app="^Authy$" manage=off
+# yabai -m rule --add app=".*" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Authy Desktop$" manage=off
+yabai -m rule --add app="^Authy$" manage=off
 
 # play nicely with popup window
 yabai -m rule --add app="^Calendar$" title="(General|^$)" manage=off
