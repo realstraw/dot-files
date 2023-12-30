@@ -1,0 +1,40 @@
+import = ["/Users/kexinxie/.config/alacritty/nord-color.toml"]
+# - ~/.config/alacritty/themes/themes/nord.yaml
+# - ~/.config/alacritty/themes/themes/solarized_dark.yaml
+# - ~/.config/alacritty/themes/themes/solarized_light.yaml
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+y = 1
+
+  # https://github.com/alacritty/alacritty/issues/1108 make sure control + 6
+  # works in vim
+[[keyboard.bindings]]
+chars = "\u001E"
+key = "Key6"
+mods = "Control"
+
+[window]
+decorations = "buttonless"
+opacity = 0.95
