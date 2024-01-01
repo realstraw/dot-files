@@ -167,3 +167,6 @@ eval "$(rbenv init - zsh)"
 
 ## For starship (https://starship.rs)
 eval "$(starship init zsh)"
+
+# Created by `pipx`
+export PATH="$PATH:$HOME/.local/bin"
