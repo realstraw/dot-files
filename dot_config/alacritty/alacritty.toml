@@ -1,4 +1,5 @@
-import = ["/Users/kexinxie/.config/alacritty/nord-color.toml"]
+import = ["~/.config/alacritty/nord-color.toml"]
+# import = ["~/.config/alacritty/themes/nord.toml"]
 # - ~/.config/alacritty/themes/themes/nord.yaml
 # - ~/.config/alacritty/themes/themes/solarized_dark.yaml
 # - ~/.config/alacritty/themes/themes/solarized_light.yaml
