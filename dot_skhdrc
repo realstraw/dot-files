@@ -118,7 +118,8 @@ shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
 alt - c : yabai -m window --toggle float;\
           yabai -m window --grid 8:8:1:1:6:6
 alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 10:18:1:1:12:8
+          yabai -m window --grid 30:30:1:1:28:28
+          # yabai -m window --grid 10:18:1:1:12:8
 alt - u : yabai -m window --toggle float;\
           yabai -m window --space 2
 alt + shift - u : yabai -m window --toggle float;\
