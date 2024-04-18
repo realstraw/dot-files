@@ -40,4 +40,4 @@ mods = "Control"
 
 [window]
 decorations = "buttonless"
-opacity = 0.95
+# opacity = 0.95
