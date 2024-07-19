@@ -33,3 +33,7 @@ yabai -m rule --add app="^Authy$" manage=off
 
 # play nicely with popup window
 yabai -m rule --add app="^Calendar$" title="(General|^$)" manage=off
+
+# boarders integration
+# https://github.com/FelixKratz/JankyBorders
+borders active_color=0xff88C0D0 inactive_color=0xff4C566A width=5.0 &
