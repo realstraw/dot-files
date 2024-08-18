@@ -63,7 +63,7 @@ if [ "$TERM" "==" "xterm" ]; then
 fi
 
 # make vim the default system editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # Tmux shortcuts
 # use EVENT_NOKQUEUE=1 before starting tmux because kqueue is broken on OS X
@@ -82,6 +82,9 @@ function taa() {
 # Alias for ctags
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
 alias ctags-gen="ctags -R --totals=yes --tag-relative=yes --exclude=.ENV --exclude=.PY_ENV --exclude=build --exclude=target -f"
+
+# alias for kitty icat
+alias icat="kitten icat"
 
 # Use vim for command-line editing
 set -o vi
@@ -112,9 +115,6 @@ export PATH=$PATH:~/Library/Application\ Support/Coursier/bin
 
 # go binaries
 export PATH="$PATH:$(go env GOPATH)/bin"
-
-# For BeanShell
-alias bsh="java -cp $HOME/.bsh/bsh-2.0b4.jar bsh.Interpreter"
 
 ## # This loads nvm
 export NVM_DIR="$HOME/.nvm"
