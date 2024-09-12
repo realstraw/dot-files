@@ -48,6 +48,12 @@
 
 # Customize to your needs...
 
+# Fix tmux changes the order of $PATH see https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
+if [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+
 ## omz shortcuts that I commonly use
 alias ls="ls -G"
 alias l="ls -lah"
@@ -158,15 +164,16 @@ source ~/.profile
 # set gpg TTY for git signing
 export GPG_TTY=$(tty)
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ## For rbenv
 eval "$(rbenv init - zsh)"
 
-## For starship (https://starship.rs)
-eval "$(starship init zsh)"
-
 # Created by `pipx`
 export PATH="$PATH:$HOME/.local/bin"
+#
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+## For starship (https://starship.rs)
+eval "$(starship init zsh)"
