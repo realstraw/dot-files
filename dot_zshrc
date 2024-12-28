@@ -49,7 +49,8 @@
 # Customize to your needs...
 
 # Fix tmux changes the order of $PATH see https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
-if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+# if [ -n "$TMUX" ] &&
+if [ -f /etc/profile ]; then
     PATH=""
     source /etc/profile
     if [ -f ~/.zprofile ]; then
