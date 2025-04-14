@@ -67,6 +67,9 @@ automatically-unhide-macos-hidden-apps = false
     outer.top =        10
     outer.right =      10
 
+[workspace-to-monitor-force-assignment]
+    E = 'secondary'
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -137,7 +140,7 @@ automatically-unhide-macos-hidden-apps = false
     # alt-b = 'workspace B'
     # alt-c = 'workspace C'
     # alt-d = 'workspace D'
-    # alt-e = 'workspace E'
+    alt-e = 'workspace E'
     # alt-g = 'workspace G'
     # alt-i = 'workspace I'
     # alt-m = 'workspace M'
@@ -224,3 +227,4 @@ automatically-unhide-macos-hidden-apps = false
     7 = ['move-node-to-workspace 7', 'mode main']
     8 = ['move-node-to-workspace 8', 'mode main']
     9 = ['move-node-to-workspace 9', 'mode main']
+    e = ['move-node-to-workspace E', 'mode main']
