@@ -23,6 +23,10 @@
 font-family = Hack Nerd Font Mono
 font-size = 12.0
 theme = nord
+font-thicken = true
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
 
 # window-padding-x = 2
 #
@@ -32,6 +36,9 @@ theme = nord
 # key= value
 # key =value
 # key = value
+#
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+
 #
 # # Any line beginning with a # is a comment. It's not possible to put
 # # a comment after a config option, since it would be interpreted as a
