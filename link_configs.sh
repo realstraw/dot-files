@@ -3,9 +3,9 @@
 project_root="$(cd "`dirname "$0"`"; pwd)"
 echo $project_root
 
-echo "Linking ~/.zshrc..."
-rm ~/.zshrc
-ln $project_root/dot_zshrc ~/.zshrc
+# echo "Linking ~/.zshrc..."
+# rm ~/.zshrc
+# ln $project_root/dot_zshrc ~/.zshrc
 
 echo "Linking zsh theme..."
 rm ~/.realstraw.zsh-theme

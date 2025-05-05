@@ -4,6 +4,7 @@ tpm_target := $(HOME)/.tmux/plugins/tpm
 stow: $(tpm_target)
 	stow -t $(HOME) --no-folding --dotfiles test
 	stow -t $(HOME) --no-folding --dotfiles tmux
+	stow -t $(HOME) --no-folding --dotfiles zshrc
 
 $(tpm_target):
 	mkdir -p $(HOME)/.tmux/plugins/tpm
