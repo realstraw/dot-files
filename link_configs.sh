@@ -7,9 +7,9 @@ echo $project_root
 # rm ~/.zshrc
 # ln $project_root/dot_zshrc ~/.zshrc
 
-echo "Linking zsh theme..."
-rm ~/.realstraw.zsh-theme
-ln $project_root/dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
+# echo "Linking zsh theme..."
+# rm ~/.realstraw.zsh-theme
+# ln $project_root/dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
 
 echo "Linking ~/.ackrc..."
 rm ~/.ackrc
