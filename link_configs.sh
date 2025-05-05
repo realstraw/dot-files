@@ -11,14 +11,6 @@ echo "Linking zsh theme..."
 rm ~/.realstraw.zsh-theme
 ln $project_root/dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
 
-echo "Linking ~/.tmux.conf..."
-rm ~/.tmux.conf
-ln $project_root/dot_tmux.conf ~/.tmux.conf
-echo "Linking ~/.tmux/dev..."
-rm ~/.tmux/dev
-mkdir -p ~/.tmux
-ln $project_root/dot_tmux_dev ~/.tmux/dev
-
 echo "Linking ~/.ackrc..."
 rm ~/.ackrc
 ln $project_root/dot_ackrc ~/.ackrc
