@@ -11,9 +11,9 @@ echo $project_root
 # rm ~/.realstraw.zsh-theme
 # ln $project_root/dot_realstraw.zsh-theme ~/.realstraw.zsh-theme
 
-echo "Linking ~/.ackrc..."
-rm ~/.ackrc
-ln $project_root/dot_ackrc ~/.ackrc
+# echo "Linking ~/.ackrc..."
+# rm ~/.ackrc
+# ln $project_root/dot_ackrc ~/.ackrc
 
 echo "Linking ~/.vrapperrc..."
 rm ~/.vrapperrc

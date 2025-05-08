@@ -1,10 +1,12 @@
 tpm_target := $(HOME)/.tmux/plugins/tpm
 
-packages := test tmux zshrc aerospace ghostty
+clean_packages := test tmux aerospace ghostty ack zsh
+
+install_packages := tmux aerospace ghostty ack zsh
 
 .PHONY: install
 install: $(tpm_target)
-	for p in $(packages); do \
+	for p in $(install_packages); do \
 		stow -t $(HOME) --no-folding --dotfiles $$p; \
 	done
 
@@ -14,6 +16,6 @@ $(tpm_target):
 
 .PHONY: clean
 clean:
-	for p in $(packages); do \
+	for p in $(clean_packages); do \
 		stow -t $(HOME) -D --dotfiles $$p; \
 	done
