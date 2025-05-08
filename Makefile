@@ -1,13 +1,19 @@
 tpm_target := $(HOME)/.tmux/plugins/tpm
 
-.PHONY: stow
-stow: $(tpm_target)
-	stow -t $(HOME) --no-folding --dotfiles test
-	stow -t $(HOME) --no-folding --dotfiles tmux
-	stow -t $(HOME) --no-folding --dotfiles zshrc
-	stow -t $(HOME) --no-folding --dotfiles aerospace
-	stow -t $(HOME) --no-folding --dotfiles ghostty
+packages := test tmux zshrc aerospace ghostty
+
+.PHONY: install
+install: $(tpm_target)
+	for p in $(packages); do \
+		stow -t $(HOME) --no-folding --dotfiles $$p; \
+	done
 
 $(tpm_target):
 	mkdir -p $(HOME)/.tmux/plugins/tpm
 	git clone https://github.com/tmux-plugins/tpm $(HOME)/.tmux/plugins/tpm
+
+.PHONY: clean
+clean:
+	for p in $(packages); do \
+		stow -t $(HOME) -D --dotfiles $$p; \
+	done
