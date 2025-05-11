@@ -32,10 +32,10 @@ echo "Linking ~/.editrc..."
 rm ~/.editrc
 ln $project_root/dot_editrc ~/.editrc
 
-# For ctags configs
-echo "Linking ~/.ctags"
-rm ~/.ctags
-ln $project_root/dot_ctags ~/.ctags
+# # For ctags configs
+# echo "Linking ~/.ctags"
+# rm ~/.ctags
+# ln $project_root/dot_ctags ~/.ctags
 
 # For gitignore
 echo "Linking ~/.gitignore"
