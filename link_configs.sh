@@ -15,17 +15,17 @@ echo $project_root
 # rm ~/.ackrc
 # ln $project_root/dot_ackrc ~/.ackrc
 
-echo "Linking ~/.vrapperrc..."
-rm ~/.vrapperrc
-ln $project_root/dot_vrapperrc ~/.vrapperrc
+# echo "Linking ~/.vrapperrc..."
+# rm ~/.vrapperrc
+# ln $project_root/dot_vrapperrc ~/.vrapperrc
 
-echo "Linking ~/.sbtconfig..."
-rm ~/.sbtconfig
-ln $project_root/dot_sbtconfig ~/.sbtconfig
+# echo "Linking ~/.sbtconfig..."
+# rm ~/.sbtconfig
+# ln $project_root/dot_sbtconfig ~/.sbtconfig
 
-echo "Linking ~/.inputrc..."
-rm ~/.inputrc
-ln $project_root/dot_inputrc ~/.inputrc
+# echo "Linking ~/.inputrc..."
+# rm ~/.inputrc
+# ln $project_root/dot_inputrc ~/.inputrc
 
 # # This is for mac which does not use inputrc
 # echo "Linking ~/.editrc..."
@@ -42,15 +42,15 @@ ln $project_root/dot_inputrc ~/.inputrc
 # rm ~/.gitignore
 # ln $project_root/dot_gitignore ~/.gitignore
 
-# For yabairc
-echo "Linking ~/.yabairc"
-rm ~/.yabairc
-ln $project_root/dot_yabairc ~/.yabairc
+# # For yabairc
+# echo "Linking ~/.yabairc"
+# rm ~/.yabairc
+# ln $project_root/dot_yabairc ~/.yabairc
 
-# For skhdrc
-echo "Linking ~/.skhdrc"
-rm ~/.skhdrc
-ln $project_root/dot_skhdrc ~/.skhdrc
+# # For skhdrc
+# echo "Linking ~/.skhdrc"
+# rm ~/.skhdrc
+# ln $project_root/dot_skhdrc ~/.skhdrc
 
 # Link bin files
 echo "Create the directory if it does not exist..."
