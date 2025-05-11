@@ -27,10 +27,10 @@ echo "Linking ~/.inputrc..."
 rm ~/.inputrc
 ln $project_root/dot_inputrc ~/.inputrc
 
-# This is for mac which does not use inputrc
-echo "Linking ~/.editrc..."
-rm ~/.editrc
-ln $project_root/dot_editrc ~/.editrc
+# # This is for mac which does not use inputrc
+# echo "Linking ~/.editrc..."
+# rm ~/.editrc
+# ln $project_root/dot_editrc ~/.editrc
 
 # # For ctags configs
 # echo "Linking ~/.ctags"
