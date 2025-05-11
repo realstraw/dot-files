@@ -1,8 +1,8 @@
 tpm_target := $(HOME)/.tmux/plugins/tpm
 
-clean_packages := test tmux aerospace ghostty ack zsh ctags edit
+clean_packages := test tmux aerospace ghostty ack zsh ctags edit git
 
-install_packages := tmux aerospace ghostty ack zsh ctags edit
+install_packages := tmux aerospace ghostty ack zsh ctags edit git
 
 .PHONY: install
 install: $(tpm_target)

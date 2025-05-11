@@ -37,10 +37,10 @@ ln $project_root/dot_inputrc ~/.inputrc
 # rm ~/.ctags
 # ln $project_root/dot_ctags ~/.ctags
 
-# For gitignore
-echo "Linking ~/.gitignore"
-rm ~/.gitignore
-ln $project_root/dot_gitignore ~/.gitignore
+# # For gitignore
+# echo "Linking ~/.gitignore"
+# rm ~/.gitignore
+# ln $project_root/dot_gitignore ~/.gitignore
 
 # For yabairc
 echo "Linking ~/.yabairc"
