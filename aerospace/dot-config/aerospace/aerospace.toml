@@ -189,6 +189,7 @@ automatically-unhide-macos-hidden-apps = false
     # alt-shift-z = 'move-node-to-workspace Z'
 
     # my everything mode
+    alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-n = 'move-node-to-workspace 1'
     # my focus mode
     alt-shift-o = ['move-node-to-workspace O', 'workspace O']
