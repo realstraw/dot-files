@@ -1,0 +1,12 @@
+set number
+
+let mapleader = ","
+let maplocalleader = " "
+nnoremap <Leader>, ,
+
+" Remap buffer next and previous
+nnoremap <Leader>jj :bn<cr>
+nnoremap <Leader>kk :bp<cr>
+
+nnoremap <Leader>ff :action GotoFile<CR>
+nnoremap <Leader>fg :action TextSearchAction<CR>
