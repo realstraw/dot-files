@@ -11,3 +11,4 @@ nnoremap <Leader>kk :bp<cr>
 
 nnoremap <Leader>ff :action GotoFile<CR>
 nnoremap <Leader>fg :action TextSearchAction<CR>
+nnoremap <Leader>mm :action GotoAction<CR>
