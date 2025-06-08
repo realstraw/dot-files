@@ -13,3 +13,4 @@ nnoremap <Leader>ff :action GotoFile<CR>
 nnoremap <Leader>fg :action TextSearchAction<CR>
 nnoremap <Leader>mm :action GotoAction<CR>
 nnoremap <space>f :action ReformatCode<CR>
+nnoremap ]d :action GotoNextError<CR>
