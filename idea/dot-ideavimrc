@@ -1,5 +1,6 @@
 set number
 set colorcolumn=100
+set wrap
 
 let mapleader = ","
 let maplocalleader = " "
