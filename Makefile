@@ -1,8 +1,8 @@
 tpm_target := $(HOME)/.tmux/plugins/tpm
 
-clean_packages := test tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship
+clean_packages := test tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship yanky-borders
 
-install_packages := tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship idea
+install_packages := tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship idea yanky-borders
 
 .PHONY: install
 install: $(tpm_target)
