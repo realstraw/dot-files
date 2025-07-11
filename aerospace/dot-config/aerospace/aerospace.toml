@@ -202,6 +202,8 @@ automatically-unhide-macos-hidden-apps = false
     # my focus mode
     alt-shift-o = ['move-node-to-workspace O', 'workspace O']
 
+    alt-f = 'fullscreen --no-outer-gaps'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
@@ -216,7 +218,7 @@ automatically-unhide-macos-hidden-apps = false
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main'] # reset layout
     t = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
-    f = ['fullscreen', 'mode main']
+    f = ['fullscreen --no-outer-gaps', 'mode main']
     backspace = ['close-all-windows-but-current', 'mode main']
 
     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
