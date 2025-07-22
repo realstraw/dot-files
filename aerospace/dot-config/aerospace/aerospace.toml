@@ -145,7 +145,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
     # alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
-    # alt-b = 'workspace B'
+    alt-b = 'workspace B'
     # alt-c = 'workspace C'
     # alt-d = 'workspace D'
     alt-e = 'workspace E'
@@ -166,7 +166,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # The following is moved to service binding section
     # # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    # alt-shift-1 = 'move-node-to-workspace 1'
+    alt-shift-1 = 'move-node-to-workspace 1'
     # alt-shift-2 = 'move-node-to-workspace 2'
     # alt-shift-3 = 'move-node-to-workspace 3'
     # alt-shift-4 = 'move-node-to-workspace 4'
@@ -176,7 +176,7 @@ automatically-unhide-macos-hidden-apps = false
     # alt-shift-8 = 'move-node-to-workspace 8'
     # alt-shift-9 = 'move-node-to-workspace 9'
     # alt-shift-a = 'move-node-to-workspace A'
-    # alt-shift-b = 'move-node-to-workspace B'
+    alt-shift-b = 'move-node-to-workspace B'
     # alt-shift-c = 'move-node-to-workspace C'
     # alt-shift-d = 'move-node-to-workspace D'
     # alt-shift-e = 'move-node-to-workspace E'
@@ -196,9 +196,6 @@ automatically-unhide-macos-hidden-apps = false
     # alt-shift-y = 'move-node-to-workspace Y'
     # alt-shift-z = 'move-node-to-workspace Z'
 
-    # my everything mode
-    alt-shift-1 = 'move-node-to-workspace 1'
-    alt-shift-n = 'move-node-to-workspace 1'
     # my focus mode
     alt-shift-o = ['move-node-to-workspace O', 'workspace O']
 
