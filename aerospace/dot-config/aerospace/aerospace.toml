@@ -240,5 +240,6 @@ automatically-unhide-macos-hidden-apps = false
     7 = ['move-node-to-workspace 7', 'mode main']
     8 = ['move-node-to-workspace 8', 'mode main']
     9 = ['move-node-to-workspace 9', 'mode main']
+    b = ['move-node-to-workspace B', 'mode main']
     e = ['move-node-to-workspace E', 'mode main']
     o = ['move-node-to-workspace O', 'workspace O', 'mode main']
