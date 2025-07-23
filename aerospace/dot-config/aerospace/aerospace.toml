@@ -166,7 +166,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # The following is moved to service binding section
     # # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    alt-shift-1 = 'move-node-to-workspace 1'
+    alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
     # alt-shift-2 = 'move-node-to-workspace 2'
     # alt-shift-3 = 'move-node-to-workspace 3'
     # alt-shift-4 = 'move-node-to-workspace 4'
@@ -176,7 +176,7 @@ automatically-unhide-macos-hidden-apps = false
     # alt-shift-8 = 'move-node-to-workspace 8'
     # alt-shift-9 = 'move-node-to-workspace 9'
     # alt-shift-a = 'move-node-to-workspace A'
-    alt-shift-b = 'move-node-to-workspace B'
+    alt-shift-b = ['move-node-to-workspace B', 'workspace B']
     # alt-shift-c = 'move-node-to-workspace C'
     # alt-shift-d = 'move-node-to-workspace D'
     # alt-shift-e = 'move-node-to-workspace E'
