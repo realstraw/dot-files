@@ -89,6 +89,19 @@ function taa() {
     ta "${foldername/\./-}"
 }
 
+# Zellij shortcuts
+alias zls="zellij ls"
+alias zn="zellij -s"
+function znn() {
+    foldername=${PWD##*/}
+    zn "${foldername//\./-}"
+}
+alias za="zellij attach"
+function zaa() {
+    foldername=${PWD##*/}
+    za "${foldername/\./-}"
+}
+
 # Alias for ctags
 # alias ctags="ctags-exuberant -R --totals=yes --tag-relative=yes -f"
 alias ctags-gen="ctags -R --totals=yes --tag-relative=yes --exclude=.ENV --exclude=.PY_ENV --exclude=build --exclude=target -f"

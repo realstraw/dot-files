@@ -150,7 +150,8 @@ keybinds clear-defaults=true {
         bind "Ctrl Shift =" { Resize "Increase"; }
         bind "Ctrl Shift [" { PreviousSwapLayout; }
         bind "Ctrl Shift ]" { NextSwapLayout; }
-        bind "Ctrl Shift f" { ToggleFloatingPanes; }
+        // bind "Ctrl Shift f" { ToggleFloatingPanes; }
+        bind "Ctrl Shift f" { ToggleFocusFullscreen; }
         bind "Ctrl Shift h" { MoveFocusOrTab "left"; }
         bind "Ctrl Shift i" { MoveTab "left"; }
         bind "Ctrl Shift j" { MoveFocus "down"; }
