@@ -258,6 +258,7 @@ load_plugins {
 // 
 // theme "dracula"
 theme "nord"
+// theme "iceberg-light"
  
 // Choose the base input mode of zellij.
 // Default: normal

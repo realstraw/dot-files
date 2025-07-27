@@ -24,7 +24,7 @@ font-family = Hack Nerd Font Mono
 font-size = 12.0
 
 theme = nord
-# theme = light:nord-light,dark:nord
+# theme = light:iceberg-light,dark:nord
 # theme = light:Builtin Solarized Light,dark:Builtin Solarized Dark
 
 font-thicken = true
