@@ -188,6 +188,9 @@ keybinds clear-defaults=true {
     shared_except "locked" "resize" "pane" "tab" "entersearch" "renametab" "renamepane" {
         bind "r" { SwitchToMode "resize"; }
     }
+    shared_among "normal" {
+        bind "d" { Detach; }
+    }
     shared_among "scroll" "search" {
         bind "PageDown" { PageScrollDown; }
         bind "PageUp" { PageScrollUp; }
