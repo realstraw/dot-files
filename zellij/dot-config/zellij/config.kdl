@@ -193,6 +193,14 @@ keybinds clear-defaults=true {
         bind "z" { ToggleFocusFullscreen; SwitchToMode "locked"; }
         bind "Ctrl u" { HalfPageScrollUp; }
         bind "Ctrl d" { HalfPageScrollDown; }
+        bind "h" { MoveFocus "left"; SwitchToMode "locked"; }
+        bind "j" { MoveFocus "down"; SwitchToMode "locked"; }
+        bind "k" { MoveFocus "up"; SwitchToMode "locked"; }
+        bind "l" { MoveFocus "right"; SwitchToMode "locked"; }
+        bind "Shift h" { MovePane "left"; SwitchToMode "locked"; }
+        bind "Shift j" { MovePane "down"; SwitchToMode "locked"; }
+        bind "Shift k" { MovePane "up"; SwitchToMode "locked"; }
+        bind "Shift l" { MovePane "right"; SwitchToMode "locked"; }
     }
     shared_among "scroll" "search" {
         bind "PageDown" { PageScrollDown; }
