@@ -15,3 +15,4 @@ nnoremap <Leader>fg :action TextSearchAction<CR>
 nnoremap <Leader>mm :action GotoAction<CR>
 nnoremap <space>f :action ReformatCode<CR>
 nnoremap ]d :action GotoNextError<CR>
+nnoremap [d :action GotoPreviousError<CR>
