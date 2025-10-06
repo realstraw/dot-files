@@ -36,3 +36,4 @@ keybind = global:ctrl+grave_accent=toggle_quick_terminal
 
 # window-decoration = none
 macos-titlebar-style = hidden
+keybind = shift+enter=text:\x1b\r
