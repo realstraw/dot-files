@@ -4,17 +4,14 @@ keybinds clear-defaults=true {
     }
     pane {
         bind "left" { MoveFocus "left"; }
-        bind "h" { MoveFocus "left"; }
         bind "down" { MoveFocus "down"; }
-        bind "j" { MoveFocus "down"; }
         bind "up" { MoveFocus "up"; }
-        bind "k" { MoveFocus "up"; }
         bind "right" { MoveFocus "right"; }
-        bind "l" { MoveFocus "right"; }
         bind "c" { SwitchToMode "renamepane"; PaneNameInput 0; }
         bind "d" { NewPane "down"; SwitchToMode "locked"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "locked"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "locked"; }
+        bind "l" { MoveFocus "right"; }
         bind "h" { MoveFocus "left"; }
         bind "i" { TogglePanePinned; SwitchToMode "locked"; }
         bind "j" { MoveFocus "down"; }
@@ -189,14 +186,18 @@ keybinds clear-defaults=true {
         bind "r" { SwitchToMode "resize"; }
     }
     shared_among "normal" {
+        bind "]" { GoToNextTab; SwitchToMode "locked"; }
+        bind "[" { GoToPreviousTab; SwitchToMode "locked"; }
         bind "d" { Detach; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "locked"; }
-        bind "Ctrl u" { HalfPageScrollUp; }
-        bind "Ctrl d" { HalfPageScrollDown; }
-        bind "h" { MoveFocus "left"; SwitchToMode "locked"; }
+        bind "h" { MoveFocusOrTab "left"; SwitchToMode "locked"; }
         bind "j" { MoveFocus "down"; SwitchToMode "locked"; }
         bind "k" { MoveFocus "up"; SwitchToMode "locked"; }
-        bind "l" { MoveFocus "right"; SwitchToMode "locked"; }
+        bind "l" { MoveFocusOrTab "right"; SwitchToMode "locked"; }
+        bind "Ctrl d" { HalfPageScrollDown; }
+        bind "Ctrl u" { HalfPageScrollUp; }
+        bind "%" { NewPane "right"; SwitchToMode "locked"; }
+        bind "\"" { NewPane "down"; SwitchToMode "locked"; }
         bind "Shift h" { MovePane "left"; SwitchToMode "locked"; }
         bind "Shift j" { MovePane "down"; SwitchToMode "locked"; }
         bind "Shift k" { MovePane "up"; SwitchToMode "locked"; }
