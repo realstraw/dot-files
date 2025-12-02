@@ -203,4 +203,3 @@ eval "$(starship init zsh)"
 ## additional zsh configuration
 export HISTSIZE=10000
 export SAVEHIST=10000
-
