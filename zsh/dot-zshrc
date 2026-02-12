@@ -99,7 +99,7 @@ function znn() {
 alias za="zellij attach"
 function zaa() {
     foldername=${PWD##*/}
-    za "${foldername/\./-}"
+    za "${foldername//\./-}"
 }
 
 # Alias for ctags
