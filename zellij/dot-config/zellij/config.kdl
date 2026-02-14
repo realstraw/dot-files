@@ -273,6 +273,7 @@ load_plugins {
 // 
 // theme "dracula"
 theme "nord"
+// theme "everforest-dark"
 // theme "iceberg-dark"
  
 // Choose the base input mode of zellij.
