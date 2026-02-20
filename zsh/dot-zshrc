@@ -203,3 +203,7 @@ eval "$(starship init zsh)"
 ## additional zsh configuration
 export HISTSIZE=10000
 export SAVEHIST=10000
+
+## For terraform autocompletes
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
