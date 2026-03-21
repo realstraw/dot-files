@@ -207,3 +207,6 @@ export SAVEHIST=10000
 ## For terraform autocompletes
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# OpenClaw Completion
+source "$HOME/.openclaw/completions/openclaw.zsh"
