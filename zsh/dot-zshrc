@@ -209,4 +209,4 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # OpenClaw Completion
-source "$HOME/.openclaw/completions/openclaw.zsh"
+[[ -s "$HOME/.openclaw/completions/openclaw.zsh" ]] && source "$HOME/.openclaw/completions/openclaw.zsh"
