@@ -20,6 +20,3 @@ style = 'bold yellow'
 
 [time]
 disabled = false
-
-[line_break]
-disabled = true
