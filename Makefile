@@ -1,11 +1,15 @@
 tpm_target := $(HOME)/.tmux/plugins/tpm
 
-clean_packages := test tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship yanky-borders zellij neovide claude
+clean_packages := test tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship yanky-borders zellij neovide claude bin
 
-install_packages := tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship idea yanky-borders zellij neovide claude
+install_packages := tmux aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship idea yanky-borders zellij neovide claude bin
+
+.PHONY: migrate
+migrate:
+	./migrate.sh
 
 .PHONY: install
-install: $(tpm_target)
+install: migrate $(tpm_target)
 	for p in $(install_packages); do \
 		stow -t $(HOME) --no-folding --dotfiles $$p; \
 	done
