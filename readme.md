@@ -7,10 +7,17 @@ separate repo here: https://github.com/realstraw/dotvim
 Install
 -------
 
-To link the rc files:
+Uses [GNU Stow](https://www.gnu.org/software/stow/) to manage symlinks.
 
     cd dotfiles
-    ./link_configs.sh
+    make install
+
+To uninstall:
+
+    make clean
+
+If upgrading from an older version (before Stow-managed bin scripts), run
+`make migrate` first (or just `make install`, which runs it automatically).
 
 Dependencies
 ------------
@@ -31,20 +38,9 @@ Download and install other programs
 
 Depended programs:
 
+- [GNU Stow](https://www.gnu.org/software/stow/)
 - figlet
 - rbenv
-
-Configuration
--------------
-
-### Mac:
-
-    # oh-my-zsh
-    git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-    # ack
-    brew install ack
-    # rbenv
-    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 
 Other
 -----
