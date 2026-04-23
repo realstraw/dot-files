@@ -22,10 +22,14 @@ for f in "$project_root"/bin/bin/*; do
     fi
 done
 
-# 2. Remove plain-file ~/.claude/CLAUDE.md so Stow can symlink it
-if [ -f "$HOME/.claude/CLAUDE.md" ] && [ ! -L "$HOME/.claude/CLAUDE.md" ]; then
-    echo "  Removing plain file: ~/.claude/CLAUDE.md"
-    rm "$HOME/.claude/CLAUDE.md"
-fi
+# 2. Remove plain files under ~/.claude/ so Stow can symlink them
+for f in $(find "$project_root"/claude/dot-claude -type f); do
+    rel="${f#"$project_root"/claude/dot-claude/}"
+    target="$HOME/.claude/$rel"
+    if [ -f "$target" ] && [ ! -L "$target" ]; then
+        echo "  Removing plain file: ~/.claude/$rel"
+        rm "$target"
+    fi
+done
 
 echo "Migration complete."
