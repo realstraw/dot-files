@@ -96,10 +96,13 @@ function znn() {
     foldername=${PWD##*/}
     zn "${foldername//\./-}"
 }
-alias za="zellij attach"
+alias za="zellij attach -c"
 function zaa() {
     foldername=${PWD##*/}
     za "${foldername//\./-}"
+}
+function zhh() {
+    (cd ~ && zellij attach -c "${${HOME##*/}//\./-}")
 }
 
 # Alias for ctags
