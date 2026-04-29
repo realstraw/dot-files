@@ -26,8 +26,8 @@ font-size = 12.0
 # theme = Iceberg Light
 # theme = Iceberg Dark
 # theme = Everforest Dark Hard
-theme = Nord
-# theme = light:iceberg-light,dark:nord
+# theme = Nord
+theme = light:Iceberg Light,dark:Nord
 # theme = light:Builtin Solarized Light,dark:Builtin Solarized Dark
 
 font-thicken = true
