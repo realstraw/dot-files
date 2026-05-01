@@ -186,8 +186,8 @@ keybinds clear-defaults=true {
         bind "r" { SwitchToMode "resize"; }
     }
     shared_among "normal" {
-        bind "]" { GoToNextTab; SwitchToMode "locked"; }
-        bind "[" { GoToPreviousTab; SwitchToMode "locked"; }
+        bind "o" { GoToNextTab; SwitchToMode "locked"; }
+        bind "i" { GoToPreviousTab; SwitchToMode "locked"; }
         bind "d" { Detach; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "locked"; }
         bind "h" { MoveFocusOrTab "left"; SwitchToMode "locked"; }
