@@ -274,7 +274,8 @@ load_plugins {
 // theme "dracula"
 // theme "ansi"
 theme_dark "nord"
-theme_light "iceberg-light"
+theme_light "nord-light"
+
 // theme "nord"
 // theme "everforest-dark"
 // theme "iceberg-light"
