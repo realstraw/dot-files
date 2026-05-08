@@ -89,12 +89,12 @@ themes {
             emphasis_3 170 180 195
         }
         frame_highlight {
-            base 208 135 112
+            base 129 161 193
             background 0
-            emphasis_0 180 142 173
-            emphasis_1 208 135 112
-            emphasis_2 208 135 112
-            emphasis_3 208 135 112
+            emphasis_0 208 135 112
+            emphasis_1 129 161 193
+            emphasis_2 129 161 193
+            emphasis_3 129 161 193
         }
         exit_code_success {
             base 163 190 140
