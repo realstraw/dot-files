@@ -86,7 +86,10 @@ function tnn() {
 alias ta="EVENT_NOKQUEUE=1 tmux attach -t"
 function taa() {
     foldername=${PWD##*/}
-    ta "${foldername/\./-}"
+    EVENT_NOKQUEUE=1 tmux new-session -A -s "${foldername//\./-}"
+}
+function thh() {
+    (cd ~ && EVENT_NOKQUEUE=1 tmux new-session -A -s "${${HOME##*/}//\./-}")
 }
 
 # Zellij shortcuts
