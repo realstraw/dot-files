@@ -12,6 +12,10 @@ install: migrate
 	done
 	stow -t $(HOME) --dotfiles alacritty
 
+.PHONY: update-submodules
+update-submodules:
+	git submodule update --remote --merge
+
 .PHONY: clean
 clean:
 	for p in $(packages); do \
