@@ -4,3 +4,9 @@
 [submodule "tmux/dot-tmux/themes/nord-tmux"]
 	path = tmux/dot-tmux/themes/nord-tmux
 	url = https://github.com/arcticicestudio/nord-tmux.git
+[submodule "tmux/dot-tmux/plugins/tmux-resurrect"]
+	path = tmux/dot-tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect.git
+[submodule "tmux/dot-tmux/plugins/tmux-continuum"]
+	path = tmux/dot-tmux/plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum.git
