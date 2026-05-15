@@ -91,6 +91,7 @@ function taa() {
 function thh() {
     (cd ~ && EVENT_NOKQUEUE=1 tmux new-session -A -s "${${HOME##*/}//\./-}")
 }
+alias cdt='cd "$(tmux display-message -p "#{session_path}")"'
 
 # Zellij shortcuts
 alias zls="zellij ls"
