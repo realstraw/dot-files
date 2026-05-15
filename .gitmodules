@@ -1,3 +1,6 @@
 [submodule "alacritty/dot-config/alacritty/themes"]
 	path = alacritty/dot-config/alacritty/themes
 	url = git@github.com:alacritty/alacritty-theme.git
+[submodule "tmux/dot-tmux/themes/nord-tmux"]
+	path = tmux/dot-tmux/themes/nord-tmux
+	url = https://github.com/arcticicestudio/nord-tmux.git
