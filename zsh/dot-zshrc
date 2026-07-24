@@ -204,3 +204,6 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # OpenClaw Completion
 [[ -s "$HOME/.openclaw/completions/openclaw.zsh" ]] && source "$HOME/.openclaw/completions/openclaw.zsh"
+
+# Enable Zoxide
+eval "$(zoxide init zsh)"
