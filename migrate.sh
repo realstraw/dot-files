@@ -22,14 +22,19 @@ for f in "$project_root"/bin/bin/*; do
     fi
 done
 
-# 2. Remove plain files under ~/.claude/ so Stow can symlink them
-for f in $(find "$project_root"/claude/dot-claude -type f); do
-    rel="${f#"$project_root"/claude/dot-claude/}"
-    target="$HOME/.claude/$rel"
-    if [ -f "$target" ] && [ ! -L "$target" ]; then
-        echo "  Removing plain file: ~/.claude/$rel"
-        rm "$target"
-    fi
+# 2. Remove plain files under managed config directories so Stow can symlink them
+for package in claude codex; do
+    config_dir="$project_root/$package/dot-$package"
+    [ -d "$config_dir" ] || continue
+
+    while IFS= read -r f; do
+        rel="${f#"$config_dir/"}"
+        target="$HOME/.$package/$rel"
+        if [ -f "$target" ] && [ ! -L "$target" ]; then
+            echo "  Removing plain file: ~/.$package/$rel"
+            rm "$target"
+        fi
+    done < <(find "$config_dir" -type f)
 done
 
 echo "Migration complete."

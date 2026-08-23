@@ -1,4 +1,4 @@
-no_fold_packages := aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship idea yanky-borders zellij neovide claude bin aerc
+no_fold_packages := aerospace ghostty ack zsh ctags edit git yabai input sbt skhd vrapper kitty starship idea yanky-borders zellij neovide claude codex bin aerc
 fold_packages := tmux alacritty
 
 packages := $(no_fold_packages) $(fold_packages)
