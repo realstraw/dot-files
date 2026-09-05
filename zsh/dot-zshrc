@@ -75,6 +75,13 @@ fi
 # make vim the default system editor
 export EDITOR=nvim
 
+# aerc/vaxis: under tmux (TERM=tmux-256color) vaxis can't confirm mode-2027
+# grapheme-cluster support, so it falls back to per-codepoint wcwidth and counts
+# VS16 emoji (e.g. 🗃️) as width 1 while ghostty renders them width 2 — corrupting
+# sidebar/folder alignment on redraw. Force the unicode-core width path. No-op when
+# aerc talks to ghostty directly (mode 2027 is already detected there).
+export VAXIS_FORCE_UNICODE=1
+
 # Tmux shortcuts
 # use EVENT_NOKQUEUE=1 before starting tmux because kqueue is broken on OS X
 alias tls="EVENT_NOKQUEUE=1 tmux ls"
