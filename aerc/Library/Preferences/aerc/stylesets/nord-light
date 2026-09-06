@@ -1,0 +1,81 @@
+# vim: ft=dosini
+#
+# aerc nord-light styleset
+#
+# Light counterpart to the `nord` styleset. Loaded automatically when macOS is
+# in light appearance (see [hooks].aerc-startup in aerc.conf). Base colors are
+# left as terminal defaults (dark text on a light background); only accents are
+# overridden. Accent choices match tmux/dot-tmux/themes/nord-light.conf so the
+# whole stack stays consistent:
+#   status  #D8DEE9 / #2E3440   active pill  #5E81AC / #ECEFF4   accent #5E81AC
+#
+
+*.default=true
+*.normal=true
+
+header.bold=true
+
+*error.bold=true
+error.fg=red
+warning.fg=yellow
+success.fg=green
+
+completion_pill.reverse=true
+completion_description.dim=true
+
+border.fg = #4c566a
+
+selector_focused.reverse=true
+selector_chooser.bold=true
+
+# Colors: Nord (light)
+
+# Strong blue selection bar with light text, matching the tmux current pill.
+*.selected.bg=#5e81ac
+*.selected.fg=#eceff4
+
+title.fg=#eceff4
+title.bg=#5e81ac
+title.bold=true
+
+msglist_marked.bg=#81a1c1
+msglist_flagged.fg=#a3be8c
+msglist_flagged.bold=true
+
+msglist_unread.fg=#5e81ac
+
+msglist_pill.reverse=true
+
+statusline_default.fg=#2e3440
+statusline_default.bg=#d8dee9
+statusline_error.fg=#eceff4
+statusline_error.bg=#bf616a
+
+tab.fg=#2e3440
+tab.bg=#d8dee9
+tab.selected.bg=#5e81ac
+tab.selected.fg=#eceff4
+
+dirlist_unread.fg=#5e81ac
+dirlist_recent.fg=#5e81ac
+
+part_*.fg=#2e3440
+part_mimetype.fg=#5e81ac
+part_*.selected.fg=#eceff4
+part_filename.selected.bold=true
+
+[viewer]
+*.default=true
+*.normal=true
+url.underline=true
+header.bold=true
+signature.dim=true
+diff_meta.bold=true
+diff_chunk.dim=true
+diff_add.fg=2
+diff_del.fg=1
+diff_whitespace.bg=1
+quote_*.fg=6
+quote_*.dim=true
+quote_1.dim=false
+code.fg=4
