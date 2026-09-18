@@ -31,6 +31,8 @@ selector_chooser.bold=true
 *.selected.bg=#394353
 
 msglist_marked.bg=#81a1c1
+msglist_marked.fg=#2e3440
+msglist_marked.selected.fg=#eceff4
 msglist_flagged.fg=#a3be8c
 msglist_flagged.bold=true
 
