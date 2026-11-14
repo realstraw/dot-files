@@ -148,6 +148,11 @@ export PATH=$PATH:~/Library/Application\ Support/Coursier/bin
 # go binaries
 export PATH="$PATH:$(go env GOPATH)/bin"
 
+# Load Homebrew and locally generated completions before nvm's completion setup.
+fpath=("$HOME/.local/share/zsh/site-functions" "$(brew --prefix)/share/zsh/site-functions" $fpath)
+autoload -Uz compinit
+compinit
+
 ## # This loads nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
