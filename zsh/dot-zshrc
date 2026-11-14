@@ -82,6 +82,20 @@ export EDITOR=nvim
 # aerc talks to ghostty directly (mode 2027 is already detected there).
 export VAXIS_FORCE_UNICODE=1
 
+# termenv (gh, glamour) skips the OSC 11 background query when TERM is tmux-*
+# and falls back to COLORFGBG, defaulting to dark. Mirror tmux's detected
+# client theme into COLORFGBG before each prompt so it follows light/dark switches.
+if [[ -n $TMUX ]]; then
+    _tmux_colorfgbg() {
+        case $(tmux display -p '#{client_theme}' 2>/dev/null) in
+            light) export COLORFGBG='0;15' ;;
+            dark)  export COLORFGBG='15;0' ;;
+        esac
+    }
+    autoload -Uz add-zsh-hook
+    add-zsh-hook precmd _tmux_colorfgbg
+fi
+
 # Tmux shortcuts
 # use EVENT_NOKQUEUE=1 before starting tmux because kqueue is broken on OS X
 alias tls="EVENT_NOKQUEUE=1 tmux ls"
