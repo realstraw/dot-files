@@ -94,6 +94,20 @@ if [[ -n $TMUX ]]; then
     }
     autoload -Uz add-zsh-hook
     add-zsh-hook precmd _tmux_colorfgbg
+
+    # Flag this window in the status line (see tmux-agent-attn) when a command
+    # that ran TMUX_ATTN_SECONDS+ finishes while you're looking elsewhere.
+    # stdin is /dev/null because the script reads hook JSON from stdin.
+    : ${TMUX_ATTN_SECONDS:=15}
+    _tmux_attn_preexec() { _tmux_attn_start=$SECONDS }
+    _tmux_attn_precmd() {
+        (( ${+_tmux_attn_start} )) || return
+        (( SECONDS - _tmux_attn_start >= TMUX_ATTN_SECONDS )) &&
+            ~/bin/tmux-agent-attn </dev/null &!
+        unset _tmux_attn_start
+    }
+    add-zsh-hook preexec _tmux_attn_preexec
+    add-zsh-hook precmd _tmux_attn_precmd
 fi
 
 # Tmux shortcuts
