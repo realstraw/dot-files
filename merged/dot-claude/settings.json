@@ -1,12 +1,4 @@
 {
-  "model": "opus",
-  "effortLevel": "xhigh",
-  "modelSettings": {
-    "claude-opus-5-5": {
-      "effortLevel": "high"
-    }
-  },
-  "theme": "auto",
   "editorMode": "vim",
   "hooks": {
     "Notification": [
