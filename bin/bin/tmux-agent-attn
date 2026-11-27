@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Agent hook (Claude Code, Codex): flag the agent's tmux window as needing
+# attention, unless you're already looking at it. dot-tmux.conf lists flagged
+# windows in status-right and clears the flag when you visit the window.
+#
+# Usage: tmux-agent-attn            # pane from $TMUX_PANE (Claude Code)
+#        tmux-agent-attn codex      # find panes running codex in the hook's cwd
+#
+# Codex runs hooks in a shared app-server daemon, so its $TMUX_PANE belongs to
+# whichever pane started the daemon, not the agent's pane.
+
+command -v tmux >/dev/null && tmux list-sessions >/dev/null 2>&1 || exit 0
+input=$(cat)
+
+if [ -n "$1" ]; then
+    cwd=$(jq -r '.cwd // empty' <<<"$input")
+    [ -n "$cwd" ] || exit 0
+    panes=$(tmux list-panes -a -F '#{pane_id}	#{pane_current_command}	#{pane_current_path}' |
+        awk -F '\t' -v cmd="$1" -v cwd="$cwd" '$2 == cmd && $3 == cwd { print $1 }')
+else
+    panes=$TMUX_PANE
+fi
+
+for pane in $panes; do
+    visible=$(tmux display-message -p -t "$pane" '#{&&:#{window_active},#{session_attached}}' 2>/dev/null)
+    [ "$visible" = "1" ] && continue
+    tmux set -w -t "$pane" @agent_attn 1 2>/dev/null
+done
+exit 0

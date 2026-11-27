@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "~/bin/tmux-agent-attn codex", "timeout": 5 }] }
+    ],
+    "PermissionRequest": [
+      { "hooks": [{ "type": "command", "command": "~/bin/tmux-agent-attn codex", "timeout": 5 }] }
+    ]
+  }
+}
