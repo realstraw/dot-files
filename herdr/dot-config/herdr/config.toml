@@ -1,0 +1,44 @@
+onboarding = false
+
+[theme]
+name = "nord"
+# Follow the host terminal's light/dark appearance.
+auto_switch = true
+dark_name = "nord"
+# herdr has no nord light theme; use a light base and layer nord colors on top.
+light_name = "one-light"
+
+# Nord light (Snow Storm backgrounds, Polar Night text), matching zellij's nord-light.
+[theme.custom.light]
+panel_bg = "#eceff4"
+sidebar_bg = "#e5e9f0"
+surface_dim = "#e5e9f0"
+active_row_bg = "#d8dee9"
+surface0 = "#d8dee9"
+surface1 = "#cfd6e2"
+selection_bg = "#88c0d0"
+overlay0 = "#aab4c3"
+overlay1 = "#7b88a1"
+text = "#2e3440"
+subtext0 = "#4c566a"
+accent = "#5e81ac"
+blue = "#5e81ac"
+teal = "#5e9ea0"
+mauve = "#b48ead"
+green = "#a3be8c"
+yellow = "#d0a040"
+red = "#bf616a"
+peach = "#d08770"
+
+[ui.toast]
+delivery = "herdr"
+
+[keys]
+prefix = "ctrl+a"
+# Like tmux's `u` (switch-client -l) and `i` (last-window). herdr has no
+# separate last-tab/last-workspace toggle; last_pane jumps back to the
+# previously focused pane, switching tab and workspace as needed.
+last_pane = ["prefix+u", "prefix+i"]
+# tmux defaults: % splits right, " splits down.
+split_vertical = "prefix+percent"
+split_horizontal = "prefix+double_quote"
